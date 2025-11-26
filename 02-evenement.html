@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Ce Jour-Là</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="page editorial">
+  
+  <!-- Numéro de page discret -->
+  <div class="page-number">02</div>
+  
+  <!-- Section haute : le contexte -->
+  <section class="editorial-intro">
+    <p class="editorial-kicker">Pendant que tu poussais ton premier cri</p>
+    <h1 class="editorial-headline">{{titre_evenement}}</h1>
+  </section>
+  
+  <!-- Image événement - pleine largeur -->
+  <figure class="editorial-figure">
+    <img src="{{image_ia_evenement}}" alt="" class="editorial-img">
+    <figcaption>{{caption_image_evenement}}</figcaption>
+  </figure>
+  
+  <!-- Récit -->
+  <article class="editorial-body">
+    <p>{{recit_evenement}}</p>
+  </article>
+  
+  <!-- Encadré ambiance -->
+  <aside class="editorial-aside">
+    <div class="aside-item">
+      <span class="aside-icon">{{lune_emoji}}</span>
+      <span class="aside-label">Lune</span>
+      <span class="aside-value">{{phase_lune}}</span>
+    </div>
+    <div class="aside-divider"></div>
+    <div class="aside-item">
+      <span class="aside-icon">🌡</span>
+      <span class="aside-label">Météo à {{ville}}</span>
+      <span class="aside-value">{{meteo}}, {{temperature}}</span>
+    </div>
+  </aside>
+  
+</div>
+</body>
+</html>

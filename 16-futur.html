@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Ce Jour-Là</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="page futur">
+  
+  <div class="page-number">16</div>
+  
+  <!-- Header -->
+  <header class="futur-header">
+    <h1>Message pour toi dans 10 ans</h1>
+    <p class="futur-timeline">De {{PRENOM}} ({{ANNEE_ACTUELLE}}) à {{PRENOM}} ({{ANNEE_FUTURE}})</p>
+  </header>
+  
+  <!-- Zone d'écriture -->
+  <div class="futur-writing">
+    
+    <p class="futur-prompt">Cher(e) moi du futur...</p>
+    
+    <!-- Lignes pour écrire -->
+    <div class="futur-lines">
+      <span class="write-line"></span>
+      <span class="write-line"></span>
+      <span class="write-line"></span>
+      <span class="write-line"></span>
+      <span class="write-line"></span>
+      <span class="write-line"></span>
+      <span class="write-line"></span>
+      <span class="write-line"></span>
+      <span class="write-line"></span>
+      <span class="write-line"></span>
+      <span class="write-line"></span>
+      <span class="write-line"></span>
+    </div>
+    
+    <div class="futur-signature">
+      <span>Ta signature : _________________</span>
+    </div>
+    
+  </div>
+  
+  <!-- Suggestions -->
+  <aside class="futur-suggestions">
+    <h3>📝 Suggestions</h3>
+    <ul>
+      <li>Quels sont tes rêves actuels ?</li>
+      <li>Qu'espères-tu avoir accompli ?</li>
+      <li>Quel conseil te donnerais-tu ?</li>
+      <li>Qu'est-ce qui te rend heureux(se) ?</li>
+    </ul>
+  </aside>
+  
+  <!-- Sceau temporel -->
+  <div class="futur-seal">
+    <span class="seal-year">{{ANNEE_ACTUELLE}}</span>
+    <span class="seal-instruction">À ouvrir en {{ANNEE_FUTURE}}</span>
+  </div>
+  
+</div>
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Ce Jour-Là</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="page cover">
+  
+  <!-- Grande image NASA en arrière-plan -->
+  <div class="cover-image">
+    <img src="{{nasa_url}}" alt="">
+  </div>
+  
+  <!-- Overlay gradient -->
+  <div class="cover-overlay"></div>
+  
+  <!-- Contenu -->
+  <div class="cover-content">
+    
+    <!-- Logo/Titre en haut -->
+    <header class="cover-header">
+      <span class="cover-issue">N°{{NUMERO_UNIQUE}}</span>
+      <h1 class="cover-logo">Ce Jour-Là</h1>
+    </header>
+    
+    <!-- Bloc central : la date GÉANTE -->
+    <div class="cover-main">
+      <div class="cover-day">{{JOUR_NUMERO}}</div>
+      <div class="cover-month-year">
+        <span class="cover-month">{{MOIS_LETTRES}}</span>
+        <span class="cover-year">{{ANNEE_NAISSANCE}}</span>
+      </div>
+    </div>
+    
+    <!-- Prénom en bas -->
+    <footer class="cover-footer">
+      <div class="cover-prenom">{{PRENOM}}</div>
+      <div class="cover-subtitle">est arrivé(e) dans ce monde</div>
+    </footer>
+    
+  </div>
+  
+</div>
+</body>
+</html>

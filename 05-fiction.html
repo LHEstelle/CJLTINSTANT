@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Ce Jour-Là</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="page fiction">
+  
+  <div class="page-number">05</div>
+  
+  <!-- Header minimal -->
+  <header class="fiction-header">
+    <span class="fiction-date">{{DATE_COMPLETE_FR}}</span>
+    <h1 class="fiction-title">Si tu avais vécu ce jour...</h1>
+  </header>
+  
+  <!-- Sous-titre événement -->
+  <p class="fiction-event">{{EVENEMENT_HISTORIQUE}}</p>
+  
+  <!-- Image IA (si disponible) -->
+  <figure class="fiction-illustration">
+    <img src="{{FICTION_IMAGE_URL}}" alt="">
+  </figure>
+  
+  <!-- Corps du récit -->
+  <article class="fiction-body">
+    {{FICTION_TEXTE}}
+  </article>
+  
+  <!-- Transition -->
+  <footer class="fiction-footer">
+    <span class="fiction-ornament">✦</span>
+    <p>Cette version de toi n'est pas si fictive...</p>
+  </footer>
+  
+</div>
+</body>
+</html>

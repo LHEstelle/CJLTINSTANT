@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Ce Jour-Là</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="page timeline">
+  
+  <div class="page-number">11</div>
+  
+  <!-- Header -->
+  <header class="timeline-header">
+    <h1 class="timeline-title">Ton Époque</h1>
+    <p class="timeline-subtitle">Les événements qui ont marqué ton temps</p>
+  </header>
+  
+  <!-- Frise verticale -->
+  <section class="timeline-events">
+    
+    <article class="timeline-event left">
+      <span class="event-year">{{event_1_year}}</span>
+      <div class="event-content">
+        <span class="event-emoji">{{event_1_emoji}}</span>
+        <h3>{{event_1_name}}</h3>
+        <p>{{event_1_desc}}</p>
+      </div>
+    </article>
+    
+    <article class="timeline-event right">
+      <span class="event-year">{{event_2_year}}</span>
+      <div class="event-content">
+        <span class="event-emoji">{{event_2_emoji}}</span>
+        <h3>{{event_2_name}}</h3>
+        <p>{{event_2_desc}}</p>
+      </div>
+    </article>
+    
+    <article class="timeline-event left">
+      <span class="event-year">{{event_3_year}}</span>
+      <div class="event-content">
+        <span class="event-emoji">{{event_3_emoji}}</span>
+        <h3>{{event_3_name}}</h3>
+        <p>{{event_3_desc}}</p>
+      </div>
+    </article>
+    
+    <article class="timeline-event right">
+      <span class="event-year">{{event_4_year}}</span>
+      <div class="event-content">
+        <span class="event-emoji">{{event_4_emoji}}</span>
+        <h3>{{event_4_name}}</h3>
+        <p>{{event_4_desc}}</p>
+      </div>
+    </article>
+    
+    <article class="timeline-event left">
+      <span class="event-year">{{event_5_year}}</span>
+      <div class="event-content">
+        <span class="event-emoji">{{event_5_emoji}}</span>
+        <h3>{{event_5_name}}</h3>
+        <p>{{event_5_desc}}</p>
+      </div>
+    </article>
+    
+  </section>
+  
+  <!-- Culture cards -->
+  <section class="timeline-culture">
+    <h2>Culture & Sport</h2>
+    <div class="culture-grid">
+      <div class="culture-card">
+        <span>{{culture_1_icon}}</span>
+        <strong>{{culture_1_name}}</strong>
+        <p>{{culture_1_desc}}</p>
+      </div>
+      <div class="culture-card">
+        <span>{{sport_1_emoji}}</span>
+        <strong>{{sport_1_name}}</strong>
+        <p>{{sport_1_desc}}</p>
+      </div>
+      <div class="culture-card">
+        <span>{{culture_2_icon}}</span>
+        <strong>{{culture_2_name}}</strong>
+        <p>{{culture_2_desc}}</p>
+      </div>
+      <div class="culture-card">
+        <span>{{sport_2_emoji}}</span>
+        <strong>{{sport_2_name}}</strong>
+        <p>{{sport_2_desc}}</p>
+      </div>
+    </div>
+  </section>
+  
+</div>
+</body>
+</html>

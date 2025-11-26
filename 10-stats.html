@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Ce Jour-Là</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="page stats">
+  
+  <div class="page-number">10</div>
+  
+  <!-- Header -->
+  <header class="stats-header">
+    <span class="stats-label">Depuis le {{DATE_COMPLETE_FR}}</span>
+    <h1 class="stats-title">Toi, aujourd'hui</h1>
+  </header>
+  
+  <!-- Âge géant -->
+  <div class="stats-age">
+    <span class="age-number">{{AGE_ACTUEL}}</span>
+    <span class="age-label">ans</span>
+  </div>
+  
+  <!-- Grille stats personnelles -->
+  <section class="stats-grid">
+    
+    <div class="stat-item">
+      <span class="stat-emoji">❤️</span>
+      <span class="stat-value">{{BATTEMENTS_COEUR}}</span>
+      <span class="stat-label">battements de cœur</span>
+    </div>
+    
+    <div class="stat-item">
+      <span class="stat-emoji">🌬</span>
+      <span class="stat-value">{{RESPIRATIONS}}</span>
+      <span class="stat-label">respirations</span>
+    </div>
+    
+    <div class="stat-item">
+      <span class="stat-emoji">👣</span>
+      <span class="stat-value">{{PAS_MARCHES}}</span>
+      <span class="stat-label">fois Paris-Marseille</span>
+    </div>
+    
+    <div class="stat-item">
+      <span class="stat-emoji">😴</span>
+      <span class="stat-value">{{HEURES_SOMMEIL}}</span>
+      <span class="stat-label">passées à dormir</span>
+    </div>
+    
+    <div class="stat-item">
+      <span class="stat-emoji">📚</span>
+      <span class="stat-value">{{HEURES_APPRENTISSAGE}}</span>
+      <span class="stat-label">d'apprentissage</span>
+    </div>
+    
+    <div class="stat-item">
+      <span class="stat-emoji">🍽</span>
+      <span class="stat-value">{{REPAS_PRIS}}</span>
+      <span class="stat-label">repas partagés</span>
+    </div>
+    
+  </section>
+  
+  <!-- Section monde -->
+  <section class="stats-world">
+    <h2>Pendant ce temps, l'humanité...</h2>
+    <div class="world-grid">
+      <div class="world-item">
+        <span class="world-value">{{POPULATION_AUGMENTATION}}</span>
+        <span class="world-label">habitants sur Terre</span>
+      </div>
+      <div class="world-item">
+        <span class="world-value">{{ESPERANCE_VIE}}</span>
+        <span class="world-label">espérance de vie</span>
+      </div>
+      <div class="world-item">
+        <span class="world-value">{{SMARTPHONES}}</span>
+        <span class="world-label">smartphones vendus</span>
+      </div>
+      <div class="world-item">
+        <span class="world-value">{{UTILISATEURS_INTERNET}}</span>
+        <span class="world-label">utilisateurs internet</span>
+      </div>
+    </div>
+  </section>
+  
+</div>
+</body>
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Ce Jour-Là</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="page journee">
+  
+  <div class="page-number">08</div>
+  
+  <!-- Titre -->
+  <header class="journee-header">
+    <h1 class="journee-title">Une journée en {{ANNEE_NAISSANCE}}</h1>
+    <p class="journee-subtitle">Si tu avais vécu ton premier jour comme une vraie journée</p>
+  </header>
+  
+  <!-- Timeline verticale -->
+  <div class="journee-timeline">
+    
+    <article class="journee-moment">
+      <div class="moment-time">
+        <span class="moment-icon">☀️</span>
+        <span class="moment-label">Matin</span>
+      </div>
+      <div class="moment-content">
+        <p class="moment-text">{{JOURNEE_MATIN}}</p>
+        <p class="moment-sensory">{{JOURNEE_MATIN_SENSORY}}</p>
+      </div>
+    </article>
+    
+    <article class="journee-moment">
+      <div class="moment-time">
+        <span class="moment-icon">🌤</span>
+        <span class="moment-label">Midi</span>
+      </div>
+      <div class="moment-content">
+        <p class="moment-text">{{JOURNEE_MIDI}}</p>
+        <p class="moment-sensory">{{JOURNEE_MIDI_SENSORY}}</p>
+      </div>
+    </article>
+    
+    <article class="journee-moment">
+      <div class="moment-time">
+        <span class="moment-icon">🌅</span>
+        <span class="moment-label">Après-midi</span>
+      </div>
+      <div class="moment-content">
+        <p class="moment-text">{{JOURNEE_APRES_MIDI}}</p>
+        <p class="moment-sensory">{{JOURNEE_APRES_MIDI_SENSORY}}</p>
+      </div>
+    </article>
+    
+    <article class="journee-moment">
+      <div class="moment-time">
+        <span class="moment-icon">🌙</span>
+        <span class="moment-label">Soir</span>
+      </div>
+      <div class="moment-content">
+        <p class="moment-text">{{JOURNEE_SOIR}}</p>
+        <p class="moment-sensory">{{JOURNEE_SOIR_SENSORY}}</p>
+      </div>
+    </article>
+    
+  </div>
+  
+  <!-- Conclusion -->
+  <footer class="journee-footer">
+    <p>Voilà à quoi ressemblait une journée ordinaire dans le monde où tu es arrivé(e).</p>
+  </footer>
+  
+</div>
+</body>
+</html>

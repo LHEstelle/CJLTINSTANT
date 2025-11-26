@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Ce Jour-Là</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="page capsule">
+  
+  <div class="page-number">07</div>
+  
+  <!-- Année géante -->
+  <div class="capsule-year">{{annee}}</div>
+  
+  <!-- Layout asymétrique -->
+  <div class="capsule-grid">
+    
+    <!-- Image principale -->
+    <div class="capsule-hero">
+      <img src="{{image_ia_mood_general}}" alt="">
+      <span class="capsule-hero-label">L'esprit de l'époque</span>
+    </div>
+    
+    <!-- Colonne photos -->
+    <div class="capsule-photos">
+      <figure class="capsule-photo">
+        <img src="{{image_1}}" alt="">
+        <figcaption>{{caption_1}}</figcaption>
+      </figure>
+      <figure class="capsule-photo">
+        <img src="{{image_2}}" alt="">
+        <figcaption>{{caption_2}}</figcaption>
+      </figure>
+      <figure class="capsule-photo">
+        <img src="{{image_3}}" alt="">
+        <figcaption>{{caption_3}}</figcaption>
+      </figure>
+    </div>
+    
+    <!-- Musique -->
+    <div class="capsule-card capsule-music">
+      <span class="card-label">Chanson n°1</span>
+      <span class="card-title">{{chanson_titre}}</span>
+      <span class="card-subtitle">{{chanson_artiste}}</span>
+    </div>
+    
+    <!-- Culture -->
+    <div class="capsule-card capsule-culture">
+      <span class="card-label">Culture Pop</span>
+      <div class="card-list">
+        <span>📺 {{serie_tv}}</span>
+        <span>🎬 {{film}}</span>
+        <span>📚 {{livre}}</span>
+      </div>
+    </div>
+    
+    <!-- Événements -->
+    <div class="capsule-card capsule-events">
+      <span class="card-label">Cette année-là</span>
+      <div class="card-list">
+        <span>{{evenement_1}}</span>
+        <span>{{evenement_2}}</span>
+        <span>Président : {{president_fr}}</span>
+      </div>
+    </div>
+    
+    <!-- Prix de l'époque -->
+    <div class="capsule-prices">
+      <div class="price-item">
+        <span class="price-label">Baguette</span>
+        <span class="price-value">{{prix_baguette}}€</span>
+      </div>
+      <div class="price-item">
+        <span class="price-label">Essence</span>
+        <span class="price-value">{{prix_essence}}€</span>
+      </div>
+      <div class="price-item">
+        <span class="price-label">Timbre</span>
+        <span class="price-value">{{prix_timbre}}€</span>
+      </div>
+      <div class="price-item">
+        <span class="price-label">Cinéma</span>
+        <span class="price-value">{{prix_cinema}}€</span>
+      </div>
+    </div>
+    
+  </div>
+  
+</div>
+</body>
+</html>

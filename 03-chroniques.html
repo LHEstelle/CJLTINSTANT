@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Ce Jour-Là</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="page article">
+  
+  <div class="page-number">03</div>
+  
+  <!-- Header article -->
+  <header class="article-header">
+    <span class="article-section">Les Chroniques</span>
+    <h1 class="article-title">{{EVENEMENT_TITRE}}</h1>
+    <p class="article-date">{{DATE_COMPLETE_FR}}</p>
+  </header>
+  
+  <!-- Corps article avec lettrine -->
+  <article class="article-content">
+    <p><span class="lettrine">{{PREMIERE_LETTRE}}</span>{{TEXTE_NARRATIF_COMPLET}}</p>
+  </article>
+  
+  <!-- Sidebar flottante -->
+  <aside class="article-sidebar">
+    
+    <div class="sidebar-block">
+      <h3>Né ce jour</h3>
+      <p>{{celebrite_nee}}</p>
+    </div>
+    
+    <div class="sidebar-block">
+      <h3>Disparu ce jour</h3>
+      <p>{{celebrite_decedee}}</p>
+    </div>
+    
+    <div class="sidebar-block">
+      <h3>En salles</h3>
+      <p>{{film_sorti}}</p>
+    </div>
+    
+  </aside>
+  
+  <!-- Citation en bas -->
+  <blockquote class="article-quote">
+    <p>Ce jour-là, environ <strong>{{nb_naissances}}</strong> bébés sont nés dans le monde.<br>Tu faisais partie de cette vague.</p>
+  </blockquote>
+  
+</div>
+</body>
+</html>

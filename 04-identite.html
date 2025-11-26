@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Ce Jour-Là</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="page passport">
+  
+  <div class="page-number">04</div>
+  
+  <!-- Titre section -->
+  <header class="passport-header">
+    <span class="passport-label">Profil d'époque</span>
+  </header>
+  
+  <!-- Le document lui-même -->
+  <div class="passport-document">
+    
+    <!-- Bande supérieure -->
+    <div class="passport-band">
+      <span>CERTIFICAT D'IDENTITÉ TEMPORELLE</span>
+    </div>
+    
+    <!-- Contenu principal -->
+    <div class="passport-body">
+      
+      <!-- Nom énorme -->
+      <div class="passport-name">{{PRENOM}}</div>
+      
+      <!-- Date arrivée -->
+      <div class="passport-arrival">
+        <span class="passport-arrival-label">Arrivée enregistrée le</span>
+        <span class="passport-arrival-date">{{DATE_COMPLETE_FR}}</span>
+      </div>
+      
+      <!-- Grille traits -->
+      <div class="passport-traits">
+        <div class="passport-trait">
+          <span class="trait-category">Caractère</span>
+          <span class="trait-text">{{TRAIT_1}}</span>
+        </div>
+        <div class="passport-trait">
+          <span class="trait-category">Tempérament</span>
+          <span class="trait-text">{{TRAIT_2}}</span>
+        </div>
+        <div class="passport-trait">
+          <span class="trait-category">Talent</span>
+          <span class="trait-text">{{TRAIT_3}}</span>
+        </div>
+      </div>
+      
+      <!-- Infos complémentaires -->
+      <div class="passport-details">
+        <div class="passport-row">
+          <span>Rôle dans la fiction</span>
+          <span>{{ROLE_FICTION}}</span>
+        </div>
+        <div class="passport-row">
+          <span>Superpouvoir</span>
+          <span>{{SUPERPOWER}}</span>
+        </div>
+        <div class="passport-row">
+          <span>Devise</span>
+          <span>{{DEVISE}}</span>
+        </div>
+      </div>
+      
+    </div>
+    
+    <!-- Tampon -->
+    <div class="passport-stamp">
+      <span>AUTHENTIFIÉ</span>
+      <span>{{ANNEE_NAISSANCE}}</span>
+    </div>
+    
+  </div>
+  
+</div>
+</body>
+</html>

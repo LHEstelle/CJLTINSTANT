@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Ce Jour-Là</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="page nostalgie">
+  
+  <div class="page-number">09</div>
+  
+  <!-- Titre pleine largeur -->
+  <header class="nostalgie-header">
+    <h1 class="nostalgie-title">Nostalgie</h1>
+    <p class="nostalgie-age">Quand tu avais {{age}} ans</p>
+  </header>
+  
+  <!-- Bloc souvenir journée -->
+  <section class="nostalgie-journee">
+    <h2>📼 Tu te souviens ?</h2>
+    <div class="journee-grid">
+      <div class="journee-item">
+        <span class="journee-label">Le matin</span>
+        <p>{{matin}}</p>
+      </div>
+      <div class="journee-item">
+        <span class="journee-label">L'après-midi</span>
+        <p>{{apresmidi}}</p>
+      </div>
+      <div class="journee-item">
+        <span class="journee-label">Le soir</span>
+        <p>{{soir}}</p>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Grille contenu 2x3 -->
+  <section class="nostalgie-grid">
+    
+    <article class="nostalgie-block">
+      <h3>📺 À l'écran</h3>
+      <ul>
+        <li>{{ecran_1}}</li>
+        <li>{{ecran_2}}</li>
+        <li>{{ecran_3}}</li>
+      </ul>
+    </article>
+    
+    <article class="nostalgie-block">
+      <h3>🎵 Dans les oreilles</h3>
+      <ul>
+        <li>{{musique_1}}</li>
+        <li>{{musique_2}}</li>
+        <li>{{musique_3}}</li>
+      </ul>
+    </article>
+    
+    <article class="nostalgie-block">
+      <h3>🍭 Le goûter</h3>
+      <ul>
+        <li>{{gouter_1}}</li>
+        <li>{{gouter_2}}</li>
+        <li>{{gouter_3}}</li>
+      </ul>
+    </article>
+    
+    <article class="nostalgie-block">
+      <h3>🎮 On jouait à</h3>
+      <ul>
+        <li>{{jeu_1}}</li>
+        <li>{{jeu_2}}</li>
+        <li>{{jeu_3}}</li>
+      </ul>
+    </article>
+    
+    <article class="nostalgie-block">
+      <h3>📚 On lisait</h3>
+      <ul>
+        <li>{{lecture_1}}</li>
+        <li>{{lecture_2}}</li>
+        <li>{{lecture_3}}</li>
+      </ul>
+    </article>
+    
+    <article class="nostalgie-block">
+      <h3>💬 On disait</h3>
+      <div class="tags">
+        <span>{{expression_1}}</span>
+        <span>{{expression_2}}</span>
+        <span>{{expression_3}}</span>
+        <span>{{expression_4}}</span>
+      </div>
+    </article>
+    
+  </section>
+  
+  <!-- Objets cultes -->
+  <footer class="nostalgie-footer">
+    <h3>🏆 Objets cultes</h3>
+    <div class="objets">
+      <span>{{objet_1}}</span>
+      <span>{{objet_2}}</span>
+      <span>{{objet_3}}</span>
+    </div>
+  </footer>
+  
+</div>
+</body>
+</html>

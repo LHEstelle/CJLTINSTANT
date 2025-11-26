@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Ce Jour-Là</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="page certificat">
+  
+  <!-- Page centrée, pas de numéro -->
+  
+  <div class="certificat-frame">
+    
+    <!-- Ornement haut -->
+    <div class="certificat-ornament">✦</div>
+    
+    <!-- Titre -->
+    <header class="certificat-header">
+      <h1>Certificat</h1>
+      <p class="certificat-subtitle">d'Authenticité & d'Unicité</p>
+    </header>
+    
+    <!-- Ligne décorative -->
+    <div class="certificat-line"></div>
+    
+    <!-- Corps -->
+    <article class="certificat-body">
+      
+      <p class="certificat-intro">Il est certifié par les présentes que</p>
+      
+      <p class="certificat-name">{{PRENOM}}</p>
+      
+      <p class="certificat-date">Né(e) le {{DATE_COMPLETE_FR}}</p>
+      
+      <div class="certificat-line"></div>
+      
+      <p class="certificat-phrase">
+        Est une personne unique, irremplaçable, dont l'arrivée dans le monde 
+        a changé le cours de l'Histoire. Ce voyage à travers le temps en témoigne.
+      </p>
+      
+    </article>
+    
+    <!-- Sceau -->
+    <div class="certificat-seal">
+      <span class="seal-number">N°{{NUMERO_UNIQUE}}</span>
+      <span class="seal-text">Édition Limitée</span>
+    </div>
+    
+    <!-- Signatures -->
+    <footer class="certificat-signatures">
+      <div class="signature-block">
+        <span class="signature-line"></span>
+        <span class="signature-label">Lieu</span>
+        <span class="signature-value">Ce Jour-Là</span>
+      </div>
+      <div class="signature-block">
+        <span class="signature-line"></span>
+        <span class="signature-label">Date</span>
+        <span class="signature-value">{{DATE_CREATION_LIVRE}}</span>
+      </div>
+    </footer>
+    
+    <!-- Footer -->
+    <p class="certificat-footer">Authentique • Unique • Irremplaçable</p>
+    
+  </div>
+  
+</div>
+</body>
+</html>

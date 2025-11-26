@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Ce Jour-Là</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="page lettre">
+  
+  <div class="page-number">12</div>
+  
+  <!-- Fond texturé papier à lettres -->
+  <div class="lettre-paper">
+    
+    <!-- En-tête -->
+    <header class="lettre-header">
+      <h1>Pour toi</h1>
+      <span class="lettre-icon">✉</span>
+    </header>
+    
+    <!-- Corps -->
+    <article class="lettre-body">
+      
+      <p class="lettre-salutation">{{FORMULE_OUVERTURE}} {{PRENOM}},</p>
+      
+      <div class="lettre-content">
+        {{MESSAGE_PERSONNALISE}}
+      </div>
+      
+      <footer class="lettre-signature">
+        <p class="signature-closing">Avec tout mon amour,</p>
+        <p class="signature-name">{{PRENOM_EXPEDITEUR}}</p>
+        <p class="signature-date">{{DATE_OFFRE}}</p>
+      </footer>
+      
+    </article>
+    
+    <!-- Sceau -->
+    <div class="lettre-seal">💌</div>
+    
+  </div>
+  
+</div>
+</body>
+</html>
